@@ -1,0 +1,806 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position:fixed; /* #13 */
+    margin:0px;
+    padding: .5%;
+    background-color: #d6001c;
+    width: 100%;
+    border-bottom: 4px solid rgb(255, 164, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    height: 110px;
+    z-index: 999;
+}
+
+.nav-link a{
+    transition: .5s;
+}
+
+#nav-bar{ 
+    width: 100%;
+    margin: auto;
+    padding-inline: 20%;
+    color:white;
+    display: flex; /* #15 */
+    flex-direction: row;
+    font-family: "VAG Rounded Std Light";
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20%;
+}
+
+#nav-bar ul{
+    list-style-type: none;
+}
+
+.ordernav a{
+    background-color: #FF620F;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: max(25px);
+    padding: 7px 20px;
+    border:1px solid white
+
+}
+
+.right-responsive-panel{
+    position: fixed;
+    border-radius: 35px;
+    box-shadow: -10px 10px 10px rgba(0,0,0, 0.5);
+    backdrop-filter: blur(70px);
+    top: max(110px);
+    right: 0;
+    margin: 0;
+    padding:0;
+    height:80%;
+    z-index:999;
+    background-color: #d6001c;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    gap:20%;
+}
+
+
+
+.burger, .back,.right-responsive-panel{
+    display: none;
+}
+.left-panel{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding-inline: 1%;
+}
+.header-img{
+    height: max(70px);
+
+
+}
+.right-panel{
+    display: flex;
+    flex-direction: row;
+    flex: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10%;
+}
+
+.right-panel a{
+    font-size: max(20px);
+    font-weight: 600;
+    color: inherit;
+    display: flex;
+    text-wrap: nowrap;
+    padding: 7px 13px;
+    text-decoration: none;
+}
+
+.right-responsive-panel a{
+    padding: 7px 13px;
+    font-size: max(20px);
+    font-weight: 600;
+    color: inherit;
+    text-decoration: none;
+}
+
+.burger a{
+    width: min-content;
+    color: inherit;
+    text-decoration: none;
+}
+
+.back a{
+    width: min-content;
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.right-panel a:hover{
+    background-color:#ec3d55;
+    border-radius: 5px;
+}
+
+.ordernav a:hover{
+    border-radius: 30px;
+}
+
+.right-responsive-panel a:hover{
+    text-shadow: 10px 5px 10px rgba(0,0,0, 0.5);
+}
+
+
+section{
+    top:100;
+    color:white;
+    padding-top: 6%;
+}
+#section1{
+    background-image: url("https://queen.jollibee.com.ph/2021/12/home_banner_1.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 7%;
+    gap: 3%;
+}
+.joy{
+
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.joy1{
+    grid-area: 1/1/4/4;
+    font-family: "VAG Rounded Std Bold";
+    font-weight: lighter;
+    font-size: 50px;
+}
+.joy2{
+    grid-area: 4/1/5/5;
+    font-family: "VAG Rounded Std Light";
+    font-weight: lighter;
+    width: 70%;
+    font-size: 20px;
+    font-weight: bold;
+}
+#section1 iframe{
+    mask-image: linear-gradient(to right, rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.01) 0%,
+    rgba(255,255,255,1) 80%,
+    rgba(255,255,255,0) 100%);
+}
+
+#section2{
+    background-color: #FDFBEC;
+    height: 575px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.product div{
+    display: grid;
+    margin: 2%;
+    grid-template-columns: 385px 385px 385px;
+    grid-template-rows: 250px 250px 250px;
+    gap: 25px;
+}
+
+.p2,.p3,.p4,.p5{
+    height:250px;
+    width: 385px;
+}
+
+.p1{
+    height: 250px;
+    width: 795px;
+}
+
+.ancp1{
+    grid-area: 1/1/3/2;
+
+}
+.ancp2{
+    grid-area: 1/3/2/4;
+
+}
+.ancp3{
+    grid-area: 2/1/3/2;
+
+}
+.ancp4{
+    grid-area: 2/2/3/3;
+
+}
+.ancp5{
+    grid-area: 2/3/3/4;
+}
+
+#s3header {
+    border-top: 4px solid rgb(255, 164, 0);
+    margin:0px;
+    font-family: "VAG Rounded Std Bold";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(214, 0, 28);
+    font-size: 48px;
+    height: 120px;
+    mask-image: linear-gradient(to right,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,.6) 0%,
+    rgba(255,255,255,1) 80%,
+    rgba(255,255,255,0) 105%);
+}
+
+.section3-1 {
+    display: flex;
+    justify-content: center;
+}
+.del1{
+    color: black;
+    font-family: "VAG Rounded Std Bold";
+    margin: 3% 0%;
+    padding-bottom: 1%;
+    padding-inline: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12%;
+    border-bottom: 2px solid rgb(227, 227, 227);
+}
+.del1 div{
+    display: flex;
+    flex-direction: space-around;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 20px;
+}
+.del1 img{
+    height: 150px;
+    width: 150px;
+}
+
+.del2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+
+.pic, .desc {
+    height: 355px;
+    width: 570px;
+}
+
+.del2 img{
+    height: 247px;
+    width:440px;
+    padding-top:30px;
+}
+
+.pic img{
+    box-shadow: -30px 55px 1px 10px #FFA400;
+    border-radius: 30px;
+}
+
+.desc{
+    color:black;
+    font-family: "VAG Rounded Std Light";
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: column;
+    font-weight: lighter;
+}
+
+.desc h2, .desc p{
+    font-size: larger;
+    margin: 4%;
+}
+
+.desc h2 {
+    font-family: "VAG Rounded Std Bold";
+    font-size: 30px;
+    color:rgb(214, 0, 28);
+}
+
+.desc div{
+    border-radius: 30px;
+    padding: 15px 30px;
+    background-color: rgb(250, 128, 3);
+    font-size: 20px;
+    margin: 5% 4%;
+    font-weight: bolder;
+}
+
+.desc div a{
+    font-family: "VAG Rounded Std Bold";
+    text-decoration: none;
+    color: white;
+}
+
+.section3-2{
+    margin-bottom: 3%;
+}
+
+#s4header {
+    border-top: 4px solid rgb(255, 164, 0);
+    margin:0px;
+    font-family: "VAG Rounded Std Bold";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(214, 0, 28);
+    font-size: 48px;
+    height: 120px;
+    mask-image: linear-gradient(to right,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,.6) 0%,
+    rgba(255,255,255,1) 80%,
+    rgba(255,255,255,0) 105%);
+}
+
+#section4{
+    gap:3%;
+    padding-inline: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+
+#form{
+    font-family: "VAG Rounded Std Thin";
+    color:black;
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    font-size: 20px;
+}
+
+.message {
+    margin: 2%;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+}
+
+#submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    border-radius: 10px;
+    margin-bottom: 4%;
+    padding: 1.5% 5%;
+    background-color: #d6001c;
+    color: white;
+}
+
+.cscare {
+    text-align: center;
+}
+
+.cscare a{
+    text-decoration: none;
+    color: blue;
+}
+
+.questions{
+    font-family:"VAG Rounded Std Bold";
+    font-size: 36px;
+    color: red;
+}
+
+.contactdetails{
+    color: black;
+    width: 350px;
+    padding-top: 2%;
+    line-height: 40px;
+}
+
+.contactdetails h2{
+    font-family:"VAG Rounded Std Bold";
+    font-size: 28px;
+    color: red;
+}
+
+.contactdetails p{
+    font-family:sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.contactemail{
+    font-family:"VAG Rounded Std Thin";
+    font-size: 16px;
+    color: rgb(33, 37, 41);
+}
+
+#envelop{
+    color: red;
+}
+
+.contact2{
+    padding-bottom: 8%;
+    border-bottom: 2px solid black;
+    margin-bottom: 0px;
+}
+
+.contact2 a{
+    text-decoration: none;
+    color: blue;
+}
+
+.onlinedelivery{
+    font-family:sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    color: black;
+}
+
+.onlinedelivery img{
+    width: 30px;
+    height: 30px;
+}
+
+.od1{
+    margin: 0px;
+}
+
+.od1-1 a, .od1-2 a{
+    text-decoration: none;
+    color: black;
+    margin: 4% 2%;
+    gap:3%;
+    font-family:"VAG Rounded Std Thin" ;
+    display: flex;
+    font-size: 17px;
+    flex-direction: row;
+    font-weight: normal;
+}
+
+footer{
+    border-top: 5px solid rgb(255, 164, 0);
+    background-color: rgb(255, 235, 222);
+    margin-top: 2%;;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap:3%;
+}
+
+.footerlogo {
+    max-width: 243px;
+    max-height: 80px;
+    margin-right: 15%;
+}
+
+.stayconnected{
+    display: flex;
+    gap: 10%;
+}
+
+.stayconnected div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-inline:10px;
+}
+
+.stayconnected a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-inline:10px;
+    text-decoration: none;
+}
+
+.followus{
+    color: red;
+    font-family:"VAG Rounded Std Bold";
+    font-weight: bolder;
+    font-size: 30px;
+    text-wrap: nowrap;
+}
+
+.jollibeephilippines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    gap:5px;
+    font-family:"VAG Rounded Std Bold";
+}
+
+.stayconnected i{
+    color: red;
+    font-size: 30px;
+}
+
+/* #14 */
+@media (max-width: 1400px) and (min-width:1200px){
+    .joy1{
+        font-size: 45px;
+    }
+    .joy2{
+        text-wrap: nowrap;
+    }
+}
+
+
+@media  (max-width:1200px) and (min-width:800px){
+    #nav-bar{
+        gap: 5%;
+        padding-inline: 8%;
+    }
+    .right-panel{
+        gap:5%;
+    }
+    iframe{
+        display: none;
+    }
+    .joy {
+        display: flex;
+        flex-direction: column;
+        width:50%;
+    }
+    #section2{
+        height: fit-content;
+    }
+    .product div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pic{
+        display: flex;
+        justify-content: center;
+    }
+    .form{
+        width: 50%;
+    }
+
+    .questions{
+        text-align: center;
+    }
+    .contactdetails{
+        width: 50%;
+    }
+
+    .footerlogo{
+        margin-right:3%;
+    }
+    .stayconnected{
+        display: flex;
+        gap: 5%;
+    }
+}
+
+@media (max-width:950px) {
+    .del2{
+        display: flex;
+        flex-direction: column;
+    }
+    .pic{
+        display: flex;
+        justify-content: center;
+    }
+
+    .stayconnected i{
+        display: flex;
+    }
+
+    .stayconnected div {
+        padding-inline:5px;
+    }
+
+    .footerlogo{
+        margin-right:1%;
+    }
+    .stayconnected{
+        display: flex;
+        gap: 3%;
+    }
+
+}
+
+@media (max-width:800px) {
+    #nav-bar{
+        padding-inline: 5%;
+        justify-content: space-around;
+        gap: 1%;
+    }
+    #nav-bar .right-panel{
+        display: none;
+    }
+
+    .header-img{
+        height: max(60px);
+    }
+    .burger {
+        display: flex;
+        float: right;
+        font-size: 200%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        cursor: pointer;
+    }
+    .back {
+        display: none;
+        float: right;
+        font-size: 50px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        cursor: pointer;
+    }
+    .hideresponsive {
+        display: flex;
+    }
+    iframe{
+        display: none;
+    }
+    .joy {
+        display: flex;
+        flex-direction: column;
+        width:70%;
+    }
+    #section2{
+        height: fit-content;
+    }
+    .product div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .product img{
+        height: 150px;
+        width: 300px;
+    }
+    .del1{
+        gap: 10%;
+    }
+    .del1 div{
+        font-size: 15px;
+    }
+    #section4{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .questions{
+        text-align: center;
+    }
+    .contactdetails{
+        width: 100%;
+        margin: 3% 5%;
+    }
+    .contactdetails h2{
+        text-align: center;
+    }
+    .jollibeephilippines p {
+        display: none;
+    }
+    .footerlogo{
+        max-width: 150px;
+        max-height: 50px;
+        margin-right: 0px;
+        padding-top: 2%;
+    }
+}
+
+@media (max-width:500px){
+    .right-responsive-panel{
+        height:60%;
+        width: 99%;
+        gap:20%;
+    }
+    .header-img{
+        height: max(50px);
+    }
+    .joy1{
+        font-size: 35px;
+    }
+    .joy2{
+        font-size: 20px;
+    }
+    .del1 {
+        gap: 15%;
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .del1 div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .del2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 4%;
+    }
+
+    .pic, .desc {
+        height: 150px;
+        width: 330px;
+        display: flex;
+        align-items: center;
+    }
+
+    .pic{
+        margin-bottom: 3%;
+    }
+    .desc{
+        margin-bottom: 35%;
+    }
+    .del2 img{
+        height: 150px;
+        width:330px;
+        padding-top:.1%;
+    }
+    .desc h2, .desc p{
+        font-size: 15px;
+        margin: 4% 0%;
+        display: flex;
+        text-wrap: wrap;
+        align-items: flex-start;
+        text-align: center;
+    }
+    .pic img{
+        box-shadow: -15px 10px 1px -3px #FFA400;
+        border-radius: 30px;
+    }
+    .ordernow{
+        display: flex;
+        align-content: center;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .followus{
+        margin: 3%;
+    }
+}
+
+@media (max-width: 350px) {
+    .contactdetails{
+        font-size:small
+    }
+}
+
+
+
+
+
