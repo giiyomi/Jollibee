@@ -3,21 +3,13 @@ let rightPanel = document.querySelector('.right-responsive-panel');
 
 
 burger.addEventListener("click", function(){
-    if(rightPanel.style.display === "flex"){ //need daw pagbaligtarin ang showSideBar() at hideSidebar()
+    if(rightPanel.style.display === "flex"){
     hideSidebar();
     } else {
     showSidebar();  
     }
 });
 
-// GANTO SYA NUNG UNA
-// burger.addEventListener("click", function(){
-//     if(rightPanel.style.display === "flex"){ //need daw pagbaligtarin ang showSideBar() at hideSidebar(), nagloloko daw kasi hindi daw nababasa ni js yung js minsan kaya kinokorek nya sa unang click.
-//      showSidebar();
-//     } else {
-//      hideSidebar();
-//     }
-// })
 
 function showSidebar(){
     rightPanel.style.display = "flex";

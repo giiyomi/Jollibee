@@ -52,8 +52,9 @@ header {
 }
 
 .right-responsive-panel{
+    width: 50%;
     position: fixed;
-    border-radius: 35px;
+    border-radius: 15px;
     box-shadow: -10px 10px 10px rgba(0,0,0, 0.5);
     backdrop-filter: blur(70px);
     top: max(110px);
@@ -65,10 +66,9 @@ header {
     background-color: #d6001c;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap:20%;
+    /* gap:20%; */
 }
 
 
@@ -492,9 +492,8 @@ footer{
 
 .footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
-    gap:3%;
 }
 
 .footerlogo {
@@ -503,7 +502,12 @@ footer{
     margin-right: 15%;
 }
 
+.leftBottomNav{
+    display: flex;
+}
+
 .stayconnected{
+    width: 100%;
     display: flex;
     gap: 10%;
 }
@@ -553,10 +557,25 @@ footer{
     .joy2{
         text-wrap: nowrap;
     }
+
+    .stayconnected{
+        gap:4%;
+    }
+
+    .stayconnected > *{
+        width: max-content;
+        display: flex;
+        gap:0% !important;
+    }
+
+    .jollibeephilippines p, .isntagram p, .twitter p{
+        text-wrap: wrap;
+        width: 80px;
+    }
 }
 
 
-@media  (max-width:1200px) and (min-width:800px){
+@media  (max-width:1200px) and (min-width:1000px){
     #nav-bar{
         gap: 5%;
         padding-inline: 8%;
@@ -606,38 +625,96 @@ footer{
     }
 }
 
-@media (max-width:950px) {
-    .del2{
+@media  (max-width:1000px) and (min-width:800px){
+
+    #header{
+        width: 100vw;
+    }
+    #nav-bar{
+        width: 100%;
+        margin: 0;
+        gap: 0%;
+        padding-inline: 0;
+    }
+    .right-panel{
+        flex:0  !important;
+        gap:0;
+    }
+    iframe{
+        display: none;
+    }
+    .joy {
         display: flex;
         flex-direction: column;
+        width:50%;
+    }
+    #section2{
+        height: fit-content;
+    }
+    .product div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
     }
     .pic{
         display: flex;
         justify-content: center;
     }
-
-    .stayconnected i{
-        display: flex;
+    .form{
+        width: 50%;
     }
 
-    .stayconnected div {
-        padding-inline:5px;
+    .questions{
+        text-align: center;
+    }
+    .contactdetails{
+        width: 50%;
+    }
+
+    .footer{
+        width: 100vw;
+    }
+
+    .footerlogo{
+        margin-right:3%;
+    }
+
+    .leftBottomNav{
+        gap:10%;
+    }
+    .stayconnected{
+        display: flex;
+        gap: 0%;
+    }
+
+    .stayconnected > *{
+        padding: 0 !important;
+    }
+
+    .facebook a, .isntagram a, .twitter a{
+        padding: 0;
+    }
+}
+
+
+@media (max-width:950px) {
+    .del2{
+        display: flex;
+        flex-direction: column;
     }
 
     .footerlogo{
         margin-right:1%;
-    }
-    .stayconnected{
-        display: flex;
-        gap: 3%;
     }
 
 }
 
 @media (max-width:800px) {
     #nav-bar{
-        padding-inline: 5%;
-        justify-content: space-around;
+        padding-inline: 10%;
+        justify-content: space-between;
         gap: 1%;
     }
     #nav-bar .right-panel{
@@ -715,13 +792,41 @@ footer{
         margin-right: 0px;
         padding-top: 2%;
     }
+
+    .leftBottomNav{
+        width: 50%;
+        justify-content: space-around;
+    }
+
+    .followus{
+        width: max-content;
+    }
+
+    .stayconnected{
+        width: max-content !important;
+        display: flex;
+        justify-content: flex-end;
+        gap: 0;
+    }
+
+    
+    .facebook, .isntagram, .twitter{
+        width: max-content;
+    }
+
+
+    .facebook a, .isntagram a, .twitter a{
+        width: 30px !important;
+        padding: 0;
+    }
+    
 }
 
-@media (max-width:500px){
+@media (max-width:600px){
     .right-responsive-panel{
         height:60%;
         width: 99%;
-        gap:20%;
+        /* gap:20%; */
     }
     .header-img{
         height: max(50px);
@@ -794,9 +899,13 @@ footer{
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
     .contactdetails{
         font-size:small
+    }
+
+    .leftBottomNav{
+        width: max-content;
     }
 }
 
