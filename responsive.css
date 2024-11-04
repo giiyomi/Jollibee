@@ -71,8 +71,6 @@ header {
     /* gap:20%; */
 }
 
-
-
 .burger, .back,.right-responsive-panel{
     display: none;
 }
@@ -139,7 +137,6 @@ header {
 .right-responsive-panel a:hover{
     text-shadow: 10px 5px 10px rgba(0,0,0, 0.5);
 }
-
 
 section{
     top:100;
@@ -800,6 +797,7 @@ footer{
 
     .followus{
         width: max-content;
+        padding-left: 16%;
     }
 
     .stayconnected{
@@ -894,8 +892,10 @@ footer{
         flex-direction: column;
         align-items: center;
     }
+    
     .followus{
         margin: 3%;
+        padding-left: 0;
     }
 }
 
